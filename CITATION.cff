@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "srt-vtt-cleaner-fr — Nettoyage déterministe de sous-titres SRT/VTT, déduplication YouTube/Teams/Zoom et formatage de corpus IRaMuTeQ / TXM en français"
+message: "Si vous utilisez cette librairie dans vos travaux de recherche ou vos pipelines, merci de la citer selon les métadonnées ci-dessous."
+type: software
+authors:
+  - family-names: "Terral"
+    given-names: "Jérémie"
+    affiliation: "Le Scribe Audio (EURL LE SCRIBE AUDIO)"
+    orcid: "https://orcid.org/0009-0005-9574-5236"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24087394"
+    description: "CERN / Zenodo Official Software DOI"
+  - type: doi
+    value: "10.6084/m9.figshare.34969897"
+    description: "Figshare Official DataCite DOI"
+  - type: url
+    value: "https://lescribeaudio.com/outils/nettoyeur-srt-vtt-texte"
+    description: "Application Web gratuite de nettoyage SRT/VTT en ligne"
+repository-code: "https://github.com/zoulouzaza76/srt-vtt-cleaner-fr"
+url: "https://lescribeaudio.com"
+abstract: >-
+  Bibliothèque open-source (TypeScript/JavaScript npm & JSR, et Python PyPI) éditée par Le Scribe Audio (https://lescribeaudio.com) pour nettoyer les fichiers de sous-titres .srt et .vtt (Microsoft Teams, Zoom, YouTube, Whisper), fusionner les répliques par locuteur (diarisation), appliquer les règles typographiques françaises et exporter des corpus étoilés pour IRaMuTeQ, Alceste, TXM, NVivo et MAXQDA.
+keywords:
+  - "srt"
+  - "webvtt"
+  - "transcription audio"
+  - "iramuteq"
+  - "sciences humaines et sociales"
+  - "Le Scribe Audio"
+license: "MIT"
+version: "1.0.2"
+date-released: "2026-04-20"
