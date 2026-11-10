@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srt-vtt-cleaner-fr"
+version = "1.0.0"
+description = "Nettoyeur zéro-dépendance de sous-titres .SRT/.VTT en français : déduplication YouTube, typographie française, export corpus IRaMuTeQ (**** *locuteur_X) et estimation réaliste du temps de retranscription."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+  { name = "LE SCRIBE AUDIO", email = "info@lescribeaudio.com" }
+]
+keywords = [
+  "srt",
+  "vtt",
+  "webvtt",
+  "transcription",
+  "francais",
+  "iramuteq",
+  "alceste",
+  "txm",
+  "shs"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: French",
+  "Programming Language :: Python :: 3",
+  "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+Homepage = "https://lescribeaudio.com/outils"
+Documentation = "https://lescribeaudio.com/transcription-audio-iramuteq-atlasti-analyse-textuelle"
+Benchmarks = "https://lescribeaudio.com/logiciels-transcription-automatique-tutoriel-comparatif"
+
+[project.scripts]
+srt-vtt-cleaner-fr = "srt_vtt_cleaner_fr.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]

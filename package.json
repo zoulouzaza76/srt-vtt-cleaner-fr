@@ -1,0 +1,58 @@
+{
+  "name": "srt-vtt-cleaner-fr",
+  "version": "1.0.0",
+  "description": "Nettoyeur zéro-dépendance de fichiers .SRT / .VTT en français : déduplication des sous-titres glissants YouTube, fusion de phrases, espaces insécables françaises, export corpus IRaMuTeQ (**** *locuteur_X) et estimation réaliste du temps de retranscription.",
+  "keywords": [
+    "srt",
+    "vtt",
+    "webvtt",
+    "subtitles",
+    "transcription",
+    "youtube-captions",
+    "francais",
+    "iramuteq",
+    "alceste",
+    "txm",
+    "shs",
+    "qualitative-research",
+    "french-typography"
+  ],
+  "homepage": "https://lescribeaudio.com/outils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zoulouzaza76/srt-vtt-cleaner-fr.git"
+  },
+  "author": {
+    "name": "LE SCRIBE AUDIO",
+    "email": "info@lescribeaudio.com",
+    "url": "https://lescribeaudio.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "module": "./src/index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
+  },
+  "bin": {
+    "srt-vtt-cleaner-fr": "./bin/cli.mjs"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/test.mjs"
+  }
+}
