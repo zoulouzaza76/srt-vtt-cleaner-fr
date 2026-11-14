@@ -35,6 +35,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://lescribeaudio.com/outils"
+Repository = "https://github.com/zoulouzaza76/srt-vtt-cleaner-fr"
 Documentation = "https://lescribeaudio.com/transcription-audio-iramuteq-atlasti-analyse-textuelle"
 Benchmarks = "https://lescribeaudio.com/logiciels-transcription-automatique-tutoriel-comparatif"
 
