@@ -1,0 +1,73 @@
+{
+  "name": "srt-vtt-cleaner-fr-vscode",
+  "displayName": "SRT/VTT Cleaner FR & Corpus IRaMuTeQ (Le Scribe Audio)",
+  "description": "Nettoyeur local de sous-titres .SRT / .VTT en français : déduplication YouTube, espaces insécables françaises, export corpus étoilé IRaMuTeQ / Alceste / TXM (UTF-8 sans BOM) et estimation réaliste du temps de retranscription.",
+  "version": "1.0.0",
+  "publisher": "lescribeaudio",
+  "license": "MIT",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "srt",
+    "vtt",
+    "webvtt",
+    "subtitles",
+    "transcription",
+    "french",
+    "francais",
+    "iramuteq",
+    "alceste",
+    "txm",
+    "shs"
+  ],
+  "homepage": "https://lescribeaudio.com/outils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zoulouzaza76/srt-vtt-cleaner-fr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoulouzaza76/srt-vtt-cleaner-fr/issues"
+  },
+  "activationEvents": [
+    "onCommand:srtVttCleanerFr.cleanToText",
+    "onCommand:srtVttCleanerFr.convertToIramuteq",
+    "onCommand:srtVttCleanerFr.estimateTime"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "srtVttCleanerFr.cleanToText",
+        "title": "Le Scribe Audio : Nettoyer .SRT/.VTT en texte français (typographie & déduplication)"
+      },
+      {
+        "command": "srtVttCleanerFr.convertToIramuteq",
+        "title": "Le Scribe Audio : Convertir en corpus étoilé IRaMuTeQ / Alceste / TXM"
+      },
+      {
+        "command": "srtVttCleanerFr.estimateTime",
+        "title": "Le Scribe Audio : Estimer le temps de retranscription / relecture (barème réaliste)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "srtVttCleanerFr.cleanToText",
+          "when": "resourceExtname == .srt || resourceExtname == .vtt",
+          "group": "modification"
+        },
+        {
+          "command": "srtVttCleanerFr.convertToIramuteq",
+          "when": "resourceExtname == .srt || resourceExtname == .vtt || resourceExtname == .txt",
+          "group": "modification"
+        }
+      ]
+    }
+  }
+}
